@@ -1,7 +1,7 @@
-function timer() {
+function timer(id, deadline) {
   // //Timer №69
 
-  const deadline = "2025-05-23";
+  //const deadline = "2025-05-23";
 
   function getTimeRemaining(endtime) {
     let days, hours, minutes, seconds;
@@ -60,7 +60,8 @@ function timer() {
     }
   }
 
-  setClock(".timer", deadline);
+  setClock(id, deadline);
 }
 
-module.exports = timer;
+// module.exports = timer;
+export default timer;
